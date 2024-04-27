@@ -1,5 +1,5 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react-swc'
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react-swc";
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -8,8 +8,8 @@ export default defineConfig({
     watch: {
       usePolling: true,
     },
-    host: true, // needed for the Docker Container port mapping to work
+    host: "0.0.0.0", // Set to '0.0.0.0' to allow external access
     strictPort: true,
-    port: 5173, // you can replace this port with any port
-  }}
-  )
+    port: 5000, // you can replace this port with any port
+  },
+});
