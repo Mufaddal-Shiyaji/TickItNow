@@ -10,6 +10,6 @@ export default defineConfig({
     },
     host: "0.0.0.0", // Set to '0.0.0.0' to allow external access
     strictPort: true,
-    port: 5000, // you can replace this port with any port
+    port: 5173, // you can replace this port with any port
   },
 });
