@@ -8,7 +8,7 @@ export default defineConfig({
     watch: {
       usePolling: true,
     },
-    host: "0.0.0.0", // Set to '0.0.0.0' to allow external access
+    host: true, // Set to '0.0.0.0' to allow external access
     port: 80, // you can replace this port with any port
   },
 });
