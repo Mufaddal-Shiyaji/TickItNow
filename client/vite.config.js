@@ -9,6 +9,6 @@ export default defineConfig({
       usePolling: true,
     },
     host: true, // Set to '0.0.0.0' to allow external access
-    port: 80, // you can replace this port with any port
+    port: 5173, // you can replace this port with any port
   },
 });
