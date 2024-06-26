@@ -4,7 +4,7 @@ An Event Management and Ticketing System
 
 # AWS Implementation:
 
-_The project uses a different port for frontend and backend respectively_
+
 
 1. Created an EC2(Elastic Cloud Compute) instance on AWS.
    ![Screenshot 2024-04-29 201026](https://github.com/Mufaddal-Shiyaji/TickItNow/assets/105577870/18aee569-64f1-43ac-96cf-5ac30c9a226f)
@@ -14,19 +14,10 @@ _The project uses a different port for frontend and backend respectively_
 3. Transfered the build to S3(Simple Storage Service).
    ![Screenshot 2024-04-29 201055](https://github.com/Mufaddal-Shiyaji/TickItNow/assets/105577870/db5406db-0154-47f6-9308-68f32646d035)
 
-4. Created an NGINX web server in the EC2 instance for serving static files.
- ![Screenshot 2024-04-29 201006](https://github.com/Mufaddal-Shiyaji/TickItNow/assets/105577870/83db7add-29d6-43c6-ad15-b047de6a0076)
-
 # Output
 ![Screenshot 2024-04-29 200956](https://github.com/Mufaddal-Shiyaji/TickItNow/assets/105577870/fd82599a-1cd4-4102-b2bc-934d9c1d21c9)
 *Client running on port 5173 on assigned public IP of the EC2 instance.*
 
-# Why do I use the NGINX server to serve my static files? Could it not be directly served on two different ports?
-
-1. Technically, this could be done. However my website was not working because of some issues with frontend packages.
-2. NGINX is a powerful web server specifically used for serving static files. It is a reverse proxy server.
-
-_A reverse proxy is a server that sits in front of one or more web servers and acts as an intermediary for client requests. It intercepts requests from clients (like web browsers) and forwards them to the appropriate backend server. The reverse proxy then receives the response from the backend server and delivers it back to the client._
 
 # Why use S3 for storage?
 
